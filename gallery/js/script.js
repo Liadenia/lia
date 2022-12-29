@@ -48,11 +48,40 @@ $(function(){
     });
 /*----------------------------Toggle menu finish------------------ */
 /*---------------------------flip-card---------------------------- */
+    
+    
+    for(let i=0; i<3; i++ ){
+        document.querySelectorAll('.card')[i].addEventListener('click',function(event){
+            let elem=event.currentTarget;
+        if (elem.style.transform == "rotateY(180deg)") {
+                elem.style.transform = "rotateY(0deg)";
+            } else {
+                elem.style.transform = "rotateY(180deg)";
+            }
+        })
+    }
+
+    // let card = document.querySelector('.card');
+    
+    // card.addEventListener('click', click);
+    // function click(event) {
+    // let elem=event.currentTarget;
+    //     if (elem.style.transform == "rotateY(180deg)") {
+    //             elem.style.transform = "rotateY(0deg)";
+    //         } else {
+    //             elem.style.transform = "rotateY(180deg)";
+    //         }
+    // }
+    
+    // $(function(){
+    //     $('.front').quickFlip('.back');
+    // });
+
 
 
 /*---------------------------flip-card finish--------------------- */
 /*--------------------------Gallery Sub 연결----------------------*/
-
+/*
     $('h1').on('click',function(){
         window.location.href="../gallery_index.html";
     });
@@ -65,6 +94,7 @@ $(function(){
     $('.sub4-1').on('click',function(){
         window.location.href="../Artist/gallery_artist.html";
     });
+*/
 /*--------------------------Gallery Sub 끝----------------------*/
 });
 
