@@ -1,0 +1,544 @@
+@charset "utf-8";
+@import "default.css";
+
+
+body,section,h1,button,img{
+    display:block;
+    margin:0px; padding:0px;
+}
+body{
+    background:#e3e3e3;
+    overflow:hidden;
+}
+html, body{
+    width:100%; height:100%;
+    font-family:"Noto Sans", sans-serif;
+    font-weight:bold;
+}
+#title_page{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#title_page>.color_box{
+    width:160px; height:245px;
+    margin:30px auto;
+    background:#afafaf;
+}
+#title_page>img{
+    width:210px; height:280px;
+    display:block;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:0px;
+    z-index:2;
+}
+#title_page>.title{
+    width:220px; height:70px;
+    background:#afafaf;
+    position:absolute;
+    left:30px; top:300px;
+    padding:5px;
+}
+#title_page>.title>h1{
+    display:block;
+    font-family:"Noto Sans";
+    font-size:28px;
+    font-weight:900;
+    text-align:center;
+    line-height:30px;
+    padding-top:5px;
+    color:#222;
+}
+#title_page>.title>h1>.sub_title{
+    font-size:18px;
+    display: block;
+    padding-right:5px;
+    text-align:right;
+}
+
+#title_page>a{
+    color:#717171;
+    position:absolute;
+    transform:translateX(-50%);
+    left:150px; top:410px;
+    font-weight:bold;
+}
+#title_page>a:hover{ color:#fff; }
+
+.play{
+    width:160px; height:40px; 
+    position:absolute;
+    left:150px; top:450px; transform:translateX(-50%);
+    padding:5px;
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+    padding-right:15px;
+    background:#afafaf url("../img/arrow1.png") no-repeat right 8px center;
+}
+.play:hover{
+    color:#fff;
+    background:#afafaf url("../img/arrow2.png") no-repeat right 8px center;
+    box-shadow:inset 3px 2px 6px rgba(0, 0, 0, 0.25);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================시작페이지 끝================================= */
+/* ==========================게임설명 페이지 시작============================ */
+#play_how{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#play_how>h2{
+    width:220px; height:36px;
+    background:#afafaf;
+    position:absolute;
+    display:block;
+    left:30px; top:0px;
+    padding:5px;
+    font-family:"Noto Sans";
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    line-height:36px;
+    color:#222;
+}
+.how{
+    width:243px; height:347px;
+    background:#afafaf;
+    position:absolute;
+    top:55px; left:23px;
+}
+.how>p{
+    font-size:14px;
+    text-align:center;
+    margin-top:10px;
+}
+.how>.howto{
+    width:200px; height:280px;
+    background:#d9d9d9;
+    position:absolute;
+    top:40px; left:20px;
+    overflow:hidden;
+}
+.how>.howto>.track{
+    width:5px; height:280px;
+    background:#717171;
+    position:absolute;
+    right:0px;
+}
+.how>.howto>.track>.bar{
+    width:5px; height:20px;
+    background:#fff;
+}
+.how>.howto>.how_inner{
+    width:190px; height:auto;
+    font-size:13px;
+    color:#222;
+}
+.how>.howto>.how_inner>p{
+    padding:10px 10px;
+    text-align:left;
+}
+/* ==========================게임설명 페이지 끝============================ */
+/* #play_how{display:none;} */
+/* ==========================게임서브 페이지 시작============================ */
+
+#sub_page{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#sub_page>.title{
+    width:220px; height:70px;
+    background:#afafaf;
+    position:absolute;
+    left:30px; top:0px;
+    padding:5px;
+}
+#sub_page>.title>h1{
+    display:block;
+    font-family:"Noto Sans";
+    font-size:28px;
+    font-weight:900;
+    text-align:center;
+    line-height:30px;
+    padding-top:5px;
+    color:#222;
+}
+#sub_page>.title>h1>.sub_title{
+    font-size:18px;
+    display: block;
+    padding-right:5px;
+    text-align:right;
+}
+
+.how2{
+    width:243px; height:300px;
+    background:#afafaf;
+    position:absolute;
+    top:95px; left:23px;
+}
+.how2>p{
+    font-size:14px;
+    text-align:center;
+    margin-top:10px;
+}
+.how2>.howto2{
+    width:200px; height:240px;
+    background:#d9d9d9;
+    position:absolute;
+    top:40px; left:20px;
+    overflow:hidden;
+}
+.how2>.howto2>.track2{
+    width:5px; height:240px;
+    background:#717171;
+    position:absolute;
+    right:0px;
+    z-index:10;
+}
+.how2>.howto2>.track2>.bar2{
+    width:5px; height:20px;
+    background:#fff;
+}
+.how2>.howto2>.how_inner2{
+    width:190px; height:auto;
+    font-size:13px;
+    color:#222;
+}
+.how2>.howto2>.how_inner2>p{
+    padding:10px 10px;
+    text-align:left;
+}
+.how2>.howto2>.how_inner2>a{
+    width:100%; height:auto;
+    background:#f5f5f5;
+    color:#222;
+    font-weight:bold;
+    text-align:center;
+    position:absolute;
+}
+
+/* ==========================게임서브 페이지 끝============================ */
+/* #sub_page{display:none;} */
+/* ===========================난이도 레벨 페이지 시작======================== */
+
+
+#intro_page{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#intro_page>.title{
+    width:220px; height:70px;
+    background:#afafaf;
+    position:absolute;
+    left:30px; top:0px;
+    padding:5px;
+}
+#intro_page>.title>h1{
+    display:block;
+    font-family:"Noto Sans";
+    font-size:28px;
+    font-weight:900;
+    text-align:center;
+    line-height:30px;
+    padding-top:5px;
+    color:#222;
+}
+#intro_page>.title>h1>.sub_title{
+    font-size:18px;
+    display: block;
+    padding-right:5px;
+    text-align:right;
+}
+
+#intro_page>.levels{
+    width:134px; height:250px;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+    position:absolute;
+}
+#intro_page>.levels>.box{
+    width:134px; height:50px;
+    background:#f5f5f5;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.25);
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+    margin-bottom:24px;
+    font-size:20px;
+    font-weight:bold;
+    line-height:50px;
+}
+#intro_page>.levels>.last{
+    margin:0px;
+}
+#intro_page>.levels>.box>a{
+    width:100%; height:auto;
+    color:#222;
+    text-align:center;
+}
+#intro_page>.levels>.box>a:hover{
+    background:#717171;
+    color:#f5f5f5;
+    box-shadow:inset 6px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+#intro_page>a{
+    color:#717171;
+    position:absolute;
+    transform:translateX(-50%);
+    left:150px; top:410px;
+    font-weight:bold;
+}
+#intro_page>a:hover{ color:#fff; }
+
+
+/* ===========================난이도 레벨 페이지 끝======================== */
+#intro_page{ display:none; }
+/* ===========================게임플레이 시작============================== */
+
+#playing{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#playing>h2{
+    width:220px; height:36px;
+    background:#afafaf;
+    position:absolute;
+    display:block;
+    left:30px; top:0px;
+    padding:5px;
+    font-family:"Noto Sans";
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    line-height:36px;
+    color:#222;
+}
+.play_area{
+    margin:70px 0px 0px;
+    background:#afafaf;
+    height:calc(100% - 290px);
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    align-content:space-around;
+    padding:20px 10px;
+}
+.play_area>div{
+    width:32%; height:82px;
+    background:#d9d9d9;
+}
+.play_area .cat img{
+    margin:-10px;
+    display:none;
+}
+.wrap_box{
+    width:153px; height:34px;
+    background:#afafaf;
+    font-size:15px;
+    margin-top:10px;
+    line-height:34px;
+    text-align:left;
+    padding-left:10px;
+}
+.star{
+    width:90px; height:34px;
+    background:#afafaf;
+    line-height:34px;
+    text-align:center;
+    position:absolute;
+    right:0px; top:380px;
+}
+.cat_box{
+    width:110px; height:110px;
+    background:#afafaf;
+    position:absolute;
+    right:0px; top:450px;
+    /* overflow:hidden; */
+}
+.cat_box>img{
+    width:100px; height:120px;
+    margin-top:-10px;
+    position:absolute;
+}
+.cat_talk{
+    width:170px; height:40px;
+    text-align:center;
+    line-height:40px;
+    border-radius:30px;
+    background:#f5f5f5;
+    position:absolute;
+    left:0px; top:520px;
+}
+
+.round{
+    width:225px; height:190px;
+    border-radius:50%;
+    background:#222;
+    color:#fff;
+    position:absolute;
+    top:130px; left:30px;
+    font-size:34px;
+    text-align:center;
+}
+.line{
+    width:315px; height:190px;
+    position:absolute;
+    top:0px; left:-40px;
+}
+.line>div{
+    width:300px;
+    position:absolute;
+    background:#222;
+    rotate:40deg;
+}
+.line>.l1{
+    height:10px;
+    top:220px; left:20px;
+}
+.line>.l2{
+    height:5px;
+    top:230px; left:50px;
+}
+.times_up>p{
+    line-height:190px;
+}
+.game_over{display:none;} /*============게임오버 팝업============*/
+.game_over>p{
+    line-height:50px;
+    margin-top:45px;
+}
+.popup{ display:none;}
+
+/* ===========================게임플레이 끝============================== */
+/* #playing{display:none;} */
+/* ===========================게임 끝난화면============================== */
+
+
+#end_page{
+    width:298px; height:550px;
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%; left:50%;
+}
+#end_page>h2{
+    width:220px; height:36px;
+    background:#afafaf;
+    position:absolute;
+    display:block;
+    left:30px; top:0px;
+    padding:5px;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    line-height:36px;
+    color:#222;
+}
+#end_page>h2>p{
+    display: inline-block;
+    padding-left:10px;
+}
+#end_page>.color_box{
+    width:130px; height:215px;
+    margin:80px auto;
+    background:#afafaf;
+}
+#end_page>img{
+    width:auto; height:250px;
+    display:block;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:50px;
+    z-index:2;
+}
+#end_page>.title{
+    width:220px; height:70px;
+    background:#afafaf;
+    position:absolute;
+    left:30px; top:310px;
+    padding:5px;
+}
+#end_page>.title>h3{
+    display:block;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    line-height:20px;
+    padding-top:5px;
+    color:#222;
+}
+#end_page>.title>h3>.sub_title{
+    font-size:14px;
+    display: block;
+    padding-right:5px;
+    text-align:center;
+}
+#end_page>.title>a{
+    font-size:18px;
+    color:#222;
+    margin-left:40px;
+    background:url("../img/arrow1.png") no-repeat right;
+    padding:0 20px;
+}
+#end_page>.title>a:hover{
+    color:#fff;
+    background:url("../img/arrow2.png") no-repeat right center;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sns>p{
+    width:255px;
+    position:absolute;
+    transform:translateX(-50%);
+    left:130px; top:410px;
+    font-weight:bold;
+    font-size:15px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    line-height:30px;
+}
+.sns>p>a{
+    display:inline-block;
+    width:30px; height:30px;
+    border-radius:50%;
+    margin-left:5px;
+    overflow:hidden;
+}
+.sns>p>a>img{
+    width:30px; height:30px;
+}
+.replay{
+    width:160px; height:40px; 
+    position:absolute;
+    left:150px; top:450px; transform:translateX(-50%);
+    padding:5px;
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+    padding-right:15px;
+    background:#afafaf url("../img/arrow1.png") no-repeat right 8px center;
+}
+.replay:hover{
+    color:#fff;
+    background:#afafaf url("../img/arrow2.png") no-repeat right 8px center;
+    box-shadow:inset 3px 2px 6px rgba(0, 0, 0, 0.25);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+/* =========================게임 끝난화면 1 - 끝========================= */
+#end_page{display:none;}
+/* =========================게임 끝난화면 2 - 시작======================== */
