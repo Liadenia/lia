@@ -7,12 +7,14 @@
     <title> Gallery . S main </title>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/gallery_style.css">
+    
 </head>
 <body>
     <header>
         <div class="innerbox">
-            <h1><a href="gallery_index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h1>
+            <h1><a href="index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h1>
             <nav id="navigation">
                 <ul class="gnb">
                     <li>
@@ -69,7 +71,7 @@
         <nav id="nav_menu">
             <div class="bg_menu">
                 <div class="nav_head">
-                    <h2><a href="gallery_index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h2>
+                    <h2><a href="index.html"><img src="image/Title/LOGO1.png" alt="gallery.S"></a></h2>
                     <ul class="lang">
                         <li><a href="#">KR</a></li>
                         <li><a href="#">EN</a></li>
@@ -141,20 +143,25 @@
     </header>
     <section id="main1">
         <div id="main_slide">
-            <img src="image/D-Main_img/banner_gallery1.png" alt="gallery">
-            <img src="image/D-Main_img/banner_gallery2.png" alt="gallery">
-            <img src="image/D-Main_img/banner_gallery3.png" alt="gallery">
-            <div class="slide_btn">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery1.png" alt="gallery"></div>
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery2.png" alt="gallery"></div>
+                    <div class="swiper-slide"><img src="image/D-Main_img/banner_gallery3.png" alt="gallery"></div>
+                </div>
+            </div>
+            <!-- <div class="slide_btn">
                 <span class="dot active-dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-            </div>
+            </div> -->
             <div class="main_title1">
                 <p>GALLERY . S 하반기 기획전시.</p>
                 <p>「 부러진 가지들 」</p>
                 <p>2022. 12. 13 (화) ~ 2022. 12. 19 (월)</p>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
         <div class="search_bar">
             <form action="#" method="get">
                 <input type="search" placeholder="search.." id="searchbox" required>
@@ -244,5 +251,31 @@
             
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 1300,
+            spaceBetween: 0,
+            effect: "fade",
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+        $('.swiper-slide').hover(function(){
+            swiper.autoplay.stop();
+            }, function(){
+            swiper.autoplay.start();
+            });
+    </script>
 </body>
 </html>
