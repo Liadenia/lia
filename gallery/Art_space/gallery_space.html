@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title> Gallery . S Space </title>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/sub_script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/gallery_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/artspace_style.css">
 </head>
 <body>
     <header>
@@ -145,15 +145,15 @@
             <img src="../image/Title/art_space(en).png" alt="art space">
         </div>
         <div class="space_page">
-            <div class="space_slide">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="../image/D-Main_img/gallery2-1.png" alt="gallery space"></div>
-                        <div class="swiper-slide"><img src="../image/D-Main_img/gallery2-1.png" alt="gallery space"></div>
-                    </div>
+            <div class="space_slide swiper mySwiper">
+                <div class="swiper-wrapper">
+                <!-- <div class=""> -->
+                    <div class="swiper-slide"><img src="../image/D-Main_img/gallery2-1.png" alt="gallery space"></div>
+                    <div class="swiper-slide"><img src="../image/D-Main_img/banner_gallery3.png" alt="gallery space"></div>
+                <!-- </div> -->
                 </div>
-                <div class="swiper-pagination"></div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section id="space_info">
@@ -204,6 +204,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             speed: 1300,
