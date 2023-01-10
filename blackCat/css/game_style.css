@@ -14,12 +14,18 @@ html, body{
     width:100%; height:100%;
     font-family:"Noto Sans", sans-serif;
     font-weight:bold;
-    cursor:url('../img/cursor(2).cur') 5 5, pointer;
+    /* cursor:url('../img/cursor(2).cur') 5 5, pointer; */
+    cursor:url('../img/cursor-t.png') 5 5, pointer;
 }
-div:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
+/* div:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
 a:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
 button:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
-a{cursor:url('../img/cursor(2).cur') 5 5, pointer;}
+a{cursor:url('../img/cursor(2).cur') 5 5, pointer;} */
+
+div:active{ cursor:url('../img/cursor.png') 5 5, pointer;}
+a:active{ cursor:url('../img/cursor.png') 5 5, pointer;}
+button:active{ cursor:url('../img/cursor.png') 5 5, pointer;}
+a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
 
 #title_page{
     width:298px; height:550px;
