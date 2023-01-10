@@ -8,4 +8,8 @@ $(function(){
     $('.howtoplay').on('click',function(){
         window.location.href="game_howtoplay.html";
     });
+
+    $("h1, h2").on("click",function () {
+        window.location.href = "index.html";
+    });
 });

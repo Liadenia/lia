@@ -14,7 +14,13 @@ html, body{
     width:100%; height:100%;
     font-family:"Noto Sans", sans-serif;
     font-weight:bold;
+    cursor:url('../img/cursor(2).cur') 5 5, pointer;
 }
+div:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
+a:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
+button:active{ cursor:url('../img/cursor.cur') 5 5, pointer;}
+a{cursor:url('../img/cursor(2).cur') 5 5, pointer;}
+
 #title_page{
     width:298px; height:550px;
     position:absolute;
@@ -125,17 +131,30 @@ html, body{
     position:absolute;
     top:40px; left:20px;
     overflow:hidden;
+    overflow-y: scroll;
 }
-.how>.howto>.track{
+
+.how>.howto::-webkit-scrollbar{
     width:5px; height:280px;
     background:#717171;
     position:absolute;
     right:0px;
 }
-.how>.howto>.track>.bar{
+.how>.howto::-webkit-scrollbar-thumb{
     width:5px; height:20px;
     background:#fff;
 }
+
+/* .how>.howto>.track{
+    width:5px; height:280px;
+    background:#717171;
+    position:absolute;
+    right:0px;
+} */
+/* .how>.howto>.track>.bar{
+    width:5px; height:20px;
+    background:#fff;
+} */
 .how>.howto>.how_inner{
     width:190px; height:auto;
     font-size:13px;
@@ -195,23 +214,40 @@ html, body{
     background:#d9d9d9;
     position:absolute;
     top:40px; left:20px;
-    overflow:hidden;
+    /* overflow:hidden; */
+    overflow-y:scroll;
 }
-.how2>.howto2>.track2{
-    width:5px; height:240px;
+.how2>.howto2::-webkit-scrollbar{
+    width:5px; height:100%;
     background:#717171;
     position:absolute;
     right:0px;
     z-index:10;
 }
-.how2>.howto2>.track2>.bar2{
+.how2>.howto2::-webkit-scrollbar-thumb{
     width:5px; height:20px;
     background:#fff;
 }
+
+
+/* .how2>.howto2>.track2{
+    width:5px; height:100%;
+    background:#717171;
+    position:absolute;
+    right:0px;
+    z-index:10;
+    
+} */
+/* .how2>.howto2>.track2>.bar2{
+    width:5px; height:20px;
+    background:#fff;
+    
+} */
 .how2>.howto2>.how_inner2{
     width:190px; height:auto;
     font-size:13px;
     color:#222;
+    
 }
 .how2>.howto2>.how_inner2>p{
     padding:10px 10px;
@@ -416,6 +452,7 @@ html, body{
 .times_up>p{
     line-height:190px;
 }
+
 .game_over{display:none;} /*============게임오버 팝업============*/
 .game_over>p{
     line-height:50px;
