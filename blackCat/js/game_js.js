@@ -136,6 +136,8 @@ let ScoreN;
           ScoreN=1;
         }else if(score>=0){
           ScoreN=0;
+        }else if(score>=-600){
+          ScoreN=5;
         }
         //console.log(life, score);
         //console.log(LifeS, ScoreN);
