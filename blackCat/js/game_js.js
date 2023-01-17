@@ -207,6 +207,7 @@ let ScoreN;
   
   $("h1, h2").on("click",function () {
     window.location.href = "game_intro.html";
+    window.location.href = "index.html";
   });
   /*--------------- 게임 인덱스 - 인트로 페이지 링크연결 -------------*/
 
