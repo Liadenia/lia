@@ -396,7 +396,7 @@ a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
     text-align:left;
     padding-left:10px;
 }
-.star{
+.life{
     width:90px; height:34px;
     background:#afafaf;
     line-height:34px;
@@ -417,13 +417,24 @@ a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
     position:absolute;
 }
 .cat_talk{
-    width:170px; height:40px;
+    width:auto; height:40px;
+    padding: 0 20px;
     text-align:center;
     line-height:40px;
-    border-radius:30px;
+    border-radius:10px;
     background:#f5f5f5;
     position:absolute;
     left:0px; top:520px;
+}
+.cat_talk>span{
+    position:absolute;
+    display:inline-block;
+    width:0; height:0;
+    border-style:solid;
+    border-width:8px;
+    top:12px;
+    right:-16px;
+    border-color:transparent transparent transparent #f5f5f5;
 }
 
 .round{
@@ -499,7 +510,7 @@ a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
     margin:80px auto;
     background:#afafaf;
 }
-#end_page>img{
+#end_page>.score_cat>img{
     width:auto; height:250px;
     display:block;
     position:absolute;
