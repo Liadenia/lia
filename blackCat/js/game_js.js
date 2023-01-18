@@ -40,6 +40,7 @@ $(function () {
   let changeNum = 0;
   let life = 3;
 
+  let bite = false;
 
   function randomTarget() {
     clickable = true;
@@ -67,18 +68,35 @@ $(function () {
           .remove();
         $(".cat_box").find("img").attr("src", "blackcat_img/cat_head3.png").show();
         $(".cat_talk").text("폭탄! ㅠㅜㅠㅠㅠ").show();
+        
+        
+        $(this).children("img").attr("src", "img/item0-.png" ).show();
+        setTimeout(200);
+
       } else if (changeNum == 1) {
         score += 100;
         $(".cat_box").find("img").attr("src", "blackcat_img/cat_head0.png").show();
         $(".cat_talk").text("털실 너무 좋아!!").show();
+
+        $(this).children("img").attr("src", "img/item1-.png" ).show();
+        setTimeout(200);
+
       } else if (changeNum == 2) {
         score += 150;
         $(".cat_box").find("img").attr("src", "blackcat_img/cat_head2.png").show();
         $(".cat_talk").text("재밌다! 더 놀아줘!").show();
+
+        $(this).children("img").attr("src", "img/item2-.png" ).show();
+        setTimeout(200);
+
       } else if (changeNum == 3) {
         score -= 100;
         $(".cat_box").find("img").attr("src", "blackcat_img/cat_head1.png").show();
         $(".cat_talk").text("배불러요..").show();
+
+        $(this).children("img").attr("src", "img/item3-.png" ).show();
+        setTimeout(200);
+
       }
       if (life == 0) {
         $(".popup").show();
@@ -209,7 +227,6 @@ let ScoreN;
   
   $("h1, h2").on("click",function () {
     window.location.href = "game_intro.html";
-    window.location.href = "index.html";
   });
   /*--------------- 게임 인덱스 - 인트로 페이지 링크연결 -------------*/
 
