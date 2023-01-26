@@ -456,7 +456,7 @@ a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
     width:300px;
     position:absolute;
     background:#222;
-    rotate:40deg;
+    transform:rotate(40deg);
 }
 .line>.l1{
     height:10px;
@@ -576,6 +576,10 @@ a{cursor:url('../img/cursor-t.png') 5 5, pointer;}
 .sns>p>a>img{
     width:30px; height:30px;
 }
+.sns>p>a:hover>img{
+    filter:invert(100%);
+}
+
 .replay{
     width:160px; height:40px; 
     position:absolute;
