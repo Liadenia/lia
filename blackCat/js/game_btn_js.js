@@ -12,4 +12,7 @@ $(function(){
     $("h1, h2").on("click",function () {
         window.location.href = "index.html";
     });
+
+    /* =====================game html 이동 btn=========================*/
+
 });

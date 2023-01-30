@@ -53,12 +53,9 @@ $(function () {
       .fadeIn(100)
       .delay(600)
       .fadeOut(100);
-    // $('.cat>img').attr('src','img/item'+changeNum+'.png');
   }
 
-  // replace - attr.src 변수하나 추가, 함수 이용해서 이미지 클릭시 변환 - 곧 다시 원래의 이미지로 변환하기 하는 것 //
   $(".cat").on("click", function () {
-    // console.log('src');
     if (clickable) {
       if (changeNum == 0) {
         life--;
@@ -125,7 +122,6 @@ let ScoreN;
     second--;
     console.log(second);
     $(".time").text("TIME :" + second);
-    //console.log(life, score);
     if (second == 0) {
       $(".popup").show();
       $(".popup>.times_up").show();
@@ -157,55 +153,11 @@ let ScoreN;
         }else if(score>=-600){
           ScoreN=5;
         }
-        //console.log(life, score);
-        //console.log(LifeS, ScoreN);
         let url = 'blackcat_img/costume'+LifeS+'-'+ScoreN+'.png';
         $("#end_page").find(".score_cat>img").attr('src', url).show()
-  
-      
-        
-        // let url = `blackcat_img/costume${LifeS}_${ScoreN}.png`;
-
-
-        /* 노가다 if문
-        if (score > 800 && life==3){
-          $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume1-4.png").show();
-        }else if (score > 600 && life==3){
-          $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume1-2.png").show();
-        }else if (score > 400 && life==3){
-          $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume1-1.png").show();
-        }else if (score < 200 && life==3){
-        $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume1-0.png").show();
-      }
-
-       else if (score > 800 && life==2){
-        $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume2-4.png").show();
-      }else if (score > 600 && life==2){
-        $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume2-2.png").show();
-      }else if (score > 400 && life==2){
-        $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume2-1.png").show();
-      }else if (score < 200 && life==2){
-      $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume2-0.png").show();
-    }
-
-     else if (score > 800 && life==1){
-      $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume3-4.png").show();
-    }else if(score > 600 && life==1){
-      $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume3-2.png").show();
-    }else if(score > 400 && life==1){
-      $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume3-1.png").show();
-    }else if(score < 200 && life==1){
-    $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/costume3-0.png").show();
-  };
-  */
       }, 1500);
     }
   }
-
-
-
-
-
 
   $("#end_page>.replay").on("click", function () {
     $("#intro_page").show();
@@ -224,12 +176,10 @@ let ScoreN;
     $(".cat_talk").text("나랑 같이 놀아요!");
   });
 
-  
   $("h1, h2").on("click",function () {
     window.location.href = "index.html";
   });
   /*--------------- 게임 인덱스 - 인트로 페이지 링크연결 -------------*/
-
 
   $("#intro_page>.howtoplay").on("click", function () {
     window.location.href = "game_howtoplay.html";
@@ -237,4 +187,5 @@ let ScoreN;
   $("#end_page>.title>a").on("click", function () {
     window.location.href = "game_info.html";
   });
+
 });
