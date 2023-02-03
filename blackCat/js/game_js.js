@@ -11,13 +11,13 @@ $(function () {
     let index = $(this).parent().index();
     switch (index) {
       case "0":
-        level = 2000;
+        level = 2300;
         break;
       case "1":
         level = 1500;
         break;
       default:
-        level = 1000;
+        level = 800;
     }
   });
 
@@ -40,7 +40,7 @@ $(function () {
   let changeNum = 0;
   let life = 3;
 
-  let bite = false;
+  // let bite = false;
 
   function randomTarget() {
     clickable = true;
@@ -106,7 +106,7 @@ $(function () {
           $("#end_page").show();
           $("#end_page").find("h2").empty().text("GAMEOVER...");
           $('#end_page').find('.score_cat>img').attr("src", "blackcat_img/cat4.png").show();
-        }, 1500);
+        }, 1000);
       } else {
         $("#playing>.score").text("SCORE :" + score);
         clickable = false;
@@ -155,7 +155,7 @@ let ScoreN;
         }
         let url = 'blackcat_img/costume'+LifeS+'-'+ScoreN+'.png';
         $("#end_page").find(".score_cat>img").attr('src', url).show()
-      }, 1500);
+      }, 1000);
     }
   }
 
