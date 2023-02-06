@@ -55,17 +55,18 @@ svg{
 .logo{
     width: 50px; height: 50px;
     box-sizing: border-box;
+    transform: rotate(0deg);
+    transition: all 1s linear;
 }
-.logo :hover{
-    /* transform: rotate( 720deg ) ; */
-    /* animation: rotate(360deg) 10s linear infinite; */
-    /* transform-origin: 50% 50%; */
-}
-
-.logo img{
-    animation: rotate(360deg) 10s linear infinite;
+.logo:hover{
+    transform: rotate(359deg);
     transform-origin: 50% 50%;
 }
+
+/* .logo img{
+    animation: rotate(360deg) 10s linear infinite;
+    transform-origin: 50% 50%;
+} */
 
 .path {
     stroke-dasharray: 2000;
@@ -110,4 +111,9 @@ svg{
     writing-mode: vertical-lr;
     text-orientation: upright;
     justify-content: space-between;
+}
+
+.gnb li{
+    width: 500px;
+    height: auto;
 }
