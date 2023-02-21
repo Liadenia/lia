@@ -5,25 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link rel="stylesheet" type="text/css" href="css/logo.css">
+    <link rel="stylesheet" type="text/css" href="css/mypage(2).css">
+    <link rel="icon" href="img/logo.png">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    
 </head>
 <body>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="30%" height="30%" viewBox="0 0 192.000000 196.000000" preserveAspectRatio="xMidYMid meet">
-    <g transform="translate(0.000000,196.000000) scale(0.100000,-0.100000)">
-    <path class="path" fill="#555" stroke="#111" stroke-width="10" d="M640 1638 c-151 -172 -357 -406 -457 -520 l-183 -207 483 -432 c265
-    -238 492 -441 503 -451 l22 -19 452 502 c326 360 451 505 444 515 -17 24 -966 919 -978 922 -6 1 -135 -138 -286 -310z m423 119 l128 -122 -196 -93 c-108 -50 -200 -90 -204 -87 -5 2 -11 44 -15 92 -4 49 -9 102 -12 119 -5 29 2 41 76 123 45 50 85 91 88 91 4 -1 65 -56 135 -123z m-339 -189 c4 -40 10 -90 13 -110 l5 -37 -98 -46 c-55 -26 -141 -67 -192 -91 l-94 -44 34 39 c97 115 314 360 319 360 4 1 10 -32 13 -71z m459 -26 c-15 -27 -84 -140 -153 -251 l-125 -202 -38 5 c-21 2 -40 6 -42 8 -3 3 -26 215 -29 267 -1 21 20 33 204 122 113 54 206 98 208 98 2 1 -9 -21 -25 -47z m652 -523 c4 -5 -13 -31 -35 -57 l-42 -49 -399 80 c-219 44 -399 83 -399 88 0 4 68 116 151 248 l151 241 284 -271 c156 -148 286 -274 289 -280z m-1076 220 c6 -67 10 -123 9 -125 -4 -3 -377 72 -383 77 -4 5 335 168 351 169 6 0 15 -48 23 -121z m-210 -134 c123 -25 225 -46 226 -47 5 -6 47 -459 44 -462 -2 -2 -62 -23 -134 -46 -71 -24 -135 -45 -141 -47 -10 -4 -465 398 -466 412 0 4 46 60 103 126 81 93 108 117 124 113 11 -2 121 -24 244 -49z m308 -63 c9 -6 7 -15 -7 -37 l-20 -30 0 38 c0 37 5 43 27 29z m446 -88 c191 -38 347 -71 347 -74 0 -6 -399 -140 -417 -140 -12 0 -342 175 -357 190 -13 13 44 102 63 98 9 -3 172 -36 364 -74z m-290 -158 c82 -43 146 -80 144 -82 -2 -2 -67 -26 -145 -54 -123 -43 -142 -47 -143 -32 0 9 -6 70 -13 135 -8 81 -9 117 -2 115 6 -2 78 -38 159 -82z m566 -80 l-102 -113 -46 25 c-25 14 -66 36 -90 50 l-44 25 179 62 c98 35 185 63 192 64 7 1 -33 -50 -89 -113z m-244 -93 c103 -56 105 -57 88 -77 -27 -31 -373 -418 -399 -445 l-22 -24 -42 40 -42 39 -19 185 c-11 101 -18 193 -17 204 2 15 35 30 168 77 91 31 168 57 173 57 4 1 54 -25 112 -56z m-505 -92 c0 -4 7 -75 15 -156 9 -81 15 -151 13 -155 -3 -10 -269 225 -268 237 0 8 202 81 228 82 6 1 12 -3 12 -8z" class="svg-elem-1"></path>
-    </g>
-    </svg>
-    <div id="navigation">
-        <div class="gnb">
-            <div class="logo"><img src="img/logo.png" alt="logo"></div>
+    <header id="navigation">
+        <nav class="gnb">
+            <div class="logo"><a href=""><img src="img/logo.png" alt="logo"></a></div>
             <ul>
-                <li>INTRO</li>
-                <li>PORTFOLIO</li>
-                <li>CONTECT</li>
+                <li><a href="#page1">INTRO</a></li>
+                <li id="portfolio"><a href="javascript:void(0);">PORTFOLIO</a></li>
+                <li class="contact"><a href="javascript:void(0);">CONTACT</li></a></li>
             </ul>
+        </nav>
+        <div class="con-txt">
+            <p>CONTACT to</p>
+            <p>E-MAIL &#58; liden207@naver.com </p>
+            <p>Mobile &#58; 010 - 0000 - 0000 </p>
+            <p>Instagram &#58; @meltingwhite </p>
         </div>
-    </div>
+        <div class="con-bg"></div>
+    </header>
+    <section id="page1">
+        <div class="main_info">
+            <div class="intro">
+                <span class="first_p">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60%" height="60%" viewBox="0 0 192.000000 196.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,196.000000) scale(0.100000,-0.100000)">
+                        <path class="path" fill="#b0b0b0" stroke="#111" stroke-width="10" d="M640 1638 c-151 -172 -357 -406 -457 -520 l-183 -207 483 -432 c265
+                        -238 492 -441 503 -451 l22 -19 452 502 c326 360 451 505 444 515 -17 24 -966 919 -978 922 -6 1 -135 -138 -286 -310z m423 119 l128 -122 -196 -93 c-108 -50 -200 -90 -204 -87 -5 2 -11 44 -15 92 -4 49 -9 102 -12 119 -5 29 2 41 76 123 45 50 85 91 88 91 4 -1 65 -56 135 -123z m-339 -189 c4 -40 10 -90 13 -110 l5 -37 -98 -46 c-55 -26 -141 -67 -192 -91 l-94 -44 34 39 c97 115 314 360 319 360 4 1 10 -32 13 -71z m459 -26 c-15 -27 -84 -140 -153 -251 l-125 -202 -38 5 c-21 2 -40 6 -42 8 -3 3 -26 215 -29 267 -1 21 20 33 204 122 113 54 206 98 208 98 2 1 -9 -21 -25 -47z m652 -523 c4 -5 -13 -31 -35 -57 l-42 -49 -399 80 c-219 44 -399 83 -399 88 0 4 68 116 151 248 l151 241 284 -271 c156 -148 286 -274 289 -280z m-1076 220 c6 -67 10 -123 9 -125 -4 -3 -377 72 -383 77 -4 5 335 168 351 169 6 0 15 -48 23 -121z m-210 -134 c123 -25 225 -46 226 -47 5 -6 47 -459 44 -462 -2 -2 -62 -23 -134 -46 -71 -24 -135 -45 -141 -47 -10 -4 -465 398 -466 412 0 4 46 60 103 126 81 93 108 117 124 113 11 -2 121 -24 244 -49z m308 -63 c9 -6 7 -15 -7 -37 l-20 -30 0 38 c0 37 5 43 27 29z m446 -88 c191 -38 347 -71 347 -74 0 -6 -399 -140 -417 -140 -12 0 -342 175 -357 190 -13 13 44 102 63 98 9 -3 172 -36 364 -74z m-290 -158 c82 -43 146 -80 144 -82 -2 -2 -67 -26 -145 -54 -123 -43 -142 -47 -143 -32 0 9 -6 70 -13 135 -8 81 -9 117 -2 115 6 -2 78 -38 159 -82z m566 -80 l-102 -113 -46 25 c-25 14 -66 36 -90 50 l-44 25 179 62 c98 35 185 63 192 64 7 1 -33 -50 -89 -113z m-244 -93 c103 -56 105 -57 88 -77 -27 -31 -373 -418 -399 -445 l-22 -24 -42 40 -42 39 -19 185 c-11 101 -18 193 -17 204 2 15 35 30 168 77 91 31 168 57 173 57 4 1 54 -25 112 -56z m-505 -92 c0 -4 7 -75 15 -156 9 -81 15 -151 13 -155 -3 -10 -269 225 -268 237 0 8 202 81 228 82 6 1 12 -3 12 -8z" class="svg-elem-1"></path>
+                        </g>
+                    </svg>
+                    <div class="main">
+                        <div class="typing">
+                            "안녕하세요. 꿈을 그리는 개발자 김상미입니다."
+                        </div>
+                        <div class="start">
+                            <span class="arrow"></span>
+                            <span class="arrow"></span>
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+                    <div id="mouse">
+                        <span class="wheel"></span>
+                        <span class="drag"></span>
+                    </div>
+                </span>
+            </div>
+            <div class="intro">
+                <span class="second_p">
+                    <div class="wrapper">
+                        <div class="accordion">
+                            <div class="card">
+                                <div class="card-header">Box 1</div>
+                                <div class="card-content">간단한 자기소개(계기)</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">Box 2</div>
+                                <div class="card-content">프로필</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">Box 3</div>
+                                <div class="card-content">다룰 수 있는 프로그램</div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">Box 4</div>
+                                <div class="card-content">간단한 애니메이션</div>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        <div class="intro">
+                <span class="third_p">
+                    <div class="wrapper">
+                        <div class="icon">
+                            <img src="img/html.png" alt="html">
+                            <img src="img/css.png" alt="css">
+                            <img src="img/sass.png" alt="sass">
+                            <img src="img/java.png" alt="java">
+                            <img src="img/jquery.png" alt="jquery">
+                            <img src="img/react.png" alt="react">
+                            <img src="img/bootstrap.png" alt="bootstrap">
+                            <img src="img/psd.png" alt="psd">
+                            <img src="img/ai.png" alt="ai">
+                            <img src="img/figma.png" alt="figma">
+                        </div>
+                    </div>
+                    Intro3
+                </span>
+            </div>
+            <div class="intro">
+                <span class="fourth_p">
+                    <div class="wrapper"></div>
+                    <div id="move">sss</div>
+                    Intro4
+                </span>
+            </div>
+            <div class="intro">
+                <span class="fifth_p">
+                    <div class="wrapper"></div>
+                    Intro5
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="page2">
+        <div class="falling">
+            
+        </div>
+    </section>
+    <section id="page3"></section>
+    <section id="page4"></section>
+    <section id="page5">
+        <div id="last_wrapper">
+            <div id="page5-2" class="last">
+                <span class="last_p">Last page</span>
+            </div>
+        </div>
+    </section>
+    <script src="js/profile.js"></script>
 </body>
 
 </html>

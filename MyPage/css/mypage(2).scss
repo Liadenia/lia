@@ -1,0 +1,422 @@
+@charset "utf-8";
+@import "header.css";
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'GmarketSansMedium';
+  -ms-overflow-style: none;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100vh;
+}
+::-webkit-scrollbar-thumb {
+  height: auto;
+  background: #555;
+  border-radius: 2px;
+  // box-shadow: inset 0px 0px 5px white;
+}
+::-webkit-scrollbar-track {
+  width: 5px;
+  height: auto;
+  background: #fff;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+@-webkit-keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+@keyframes animate-svg-fill-1 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+  }
+}
+
+.svg-elem-1 {
+  -webkit-animation: animate-svg-fill-1 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+  animation: animate-svg-fill-1 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s both;
+}
+
+svg {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 20%;
+}
+
+.path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 3000;
+  animation: dash 2s linear alternate infinite;
+}
+
+@keyframes dash {
+  30% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 100;
+    fill: #555
+  }
+  /*     
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -40%;
+        fill: hsla(189, 68%, 75%,0%)
+    } */
+}
+
+#page1 {
+  z-index: 1000;
+  // width: 500vw;
+  height: 500vw;
+  background: #ededed;
+  .main_info {
+    width: 500vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease-out;
+    display: flex;
+    flex-direction: row;
+    z-index:900;
+    .intro {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      z-index: 800;
+      >span{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        .wrapper{
+          width: 80%;
+          height: 80%;
+          box-sizing: border-box;
+          border: 1px solid #555;
+          display: block;
+          position: absolute;
+          top: 10%;
+          left: 10%;
+        }
+      }
+
+      .first_p {
+        .main {
+          width: 100vw;
+          height: 100vh;
+
+          .typing {
+            width: 32ch;
+            height: 35px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.4rem;
+            line-height: 40px;
+            text-align: left;
+            font-weight: 700;
+            color: #333;
+            animation: typing 2s steps(27), blink .5s step-end infinite alternate;
+            /* animation-iteration-count:1; */
+            border-right: 3px solid #555;
+            overflow: hidden;
+          }
+
+          .start {
+            position: absolute;
+            top: 55%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+
+            .arrow {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              border-top: 3px solid #1f1f1f;
+              border-right: 3px solid rgb(255, 255, 255);
+              /* transform: rotate(90deg); */
+              margin: -10px;
+              animation: animate 2s infinite;
+              &:nth-child(2) {
+                animation-delay: -0.2s;
+              }
+              &:nth-child(3) {
+                animation-delay: -0.4s;
+              }
+            }
+          }
+        }
+
+        #mouse {
+          width: 35px;
+          height: 50px;
+          position: fixed;
+          bottom: 2rem;
+          display: inline-block;
+          left: 50%;
+          border: 2px solid #555;
+          border-radius: 30px;
+
+          .wheel {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 14px;
+            border-radius: 3px;
+            background: #555;
+            left: 50%;
+            top: 6px;
+            transform: translate(-50%, 0px);
+          }
+
+          .drag {
+            position: absolute;
+            display: block;
+            top: 0%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            margin: -4px 0 0 -4px;
+            background: white;
+            border-radius: 50%;
+            -webkit-animation: ani-drag 2.5s linear infinite;
+            -moz-animation: ani-drag 2.5s linear infinite;
+            animation: ani-drag 2.5s linear infinite;
+          }
+        }
+      }
+      
+      .second_p{
+        background: #268;
+        .accordion{
+          width: 60%;
+          height: 60%;
+          background: #f94;
+          display: flex;
+          overflow-x: scroll;
+          position: relative;
+          z-index: 933;
+          .card{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            margin-right: 20px;
+            background: #f94;
+            transition: left 0.3s ease-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 987;
+            .card-header{
+              background: #333;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+            .card-content{
+              // display: none;
+              padding: 20px;
+            }
+            .card.open{
+              transform: translateX(45%);
+            }
+          }
+        }
+      }
+      .third_p{
+        background: #587;
+        .icon{
+          width: 80%;
+          height: 80%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .fourth_p{
+        // background: #656;
+      }
+      .fifth_p{
+        background: #245;
+      }
+      
+      
+    }
+  }
+}
+
+
+/* --------------------글자 타이핑 애니메이션-------------------- */
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+/* --------------------마우스 휠 애니메이션-------------------- */
+@-webkit-keyframes ani-drag {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@-moz-keyframes ani-drag {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@keyframes ani-drag {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+/* --------------------메인 이미지 화살표 애니메이션-------------------- */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translate(-20px, 20px) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(20px, 20px) rotate(45deg);
+  }
+}
+
+
+
+
+#page2 {
+  background: #f54;
+  z-index:504;
+  .falling{
+    width: 80%;
+    height: 80%;
+    border: 1px solid #555;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+#page3 {
+  background: #2e6;
+  z-index: 505;
+}
+
+#page4 {
+  background: #08d;
+  z-index: 600;
+}
+
+#page5{
+  background: #507;
+  height: 200vw;
+  z-index: 401;
+  #last_wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 450;
+    transition: all 0.6s ease-out;
+    .last{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      flex-direction: row-reverse;
+      z-index: 445;
+      background: #f87;
+      .last_p{
+        background: #f47;
+        width: 40vw;
+        height: 30vh;
+        display: flex;
+        position: absolute;
+        bottom: 30%;
+        left: 40%;
+        z-index: 435;
+      }
+    }
+  }
+}
