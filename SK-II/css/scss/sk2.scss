@@ -2,8 +2,67 @@
 @import "default.css";
 
 
-body{ border: 1px ;}
-
 #innerbox{
     width: 100%;
+    height: auto;
+    .navigation{
+        .gnb{
+
+        }
+    }
+}
+#navbar{
+    .control-bar{
+        .wrapper{
+
+        }
+        .latest{
+
+        }
+        .to-top{
+
+        }
+    }
+}
+
+#main_slide{
+    .slide1{
+        .inner-wrapper1{
+
+        }
+    }
+    .slide2{
+        .inner-wrapper2{
+
+        }
+    }
+    .slide3{
+        .inner-wrapper3{
+
+        }
+    }
+}
+
+.inner_banner{
+    .main_banner{
+        .info{
+            .info_wrapper{
+                .info_img{
+
+                }
+                .info_title{
+
+                }
+                .info_txt{
+
+                }
+            }
+        }
+    }
+}
+
+#howto{
+    .how_img{
+        
+    }
 }
