@@ -4,9 +4,17 @@
 
 #innerbox{
     width: 100%;
-    height: auto;
+    height: 100px;
     .navigation{
         .gnb{
+            display: block;
+            li{
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                justify-content: space-between;
+                text-align: center;
+            }
 
         }
     }
@@ -63,6 +71,6 @@
 
 #howto{
     .how_img{
-        
+
     }
 }
