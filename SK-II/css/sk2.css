@@ -2,14 +2,30 @@
 #innerbox {
   width: 100%;
   height: 100px;
+  position: relative;
+}
+#innerbox h1 {
+  position: absolute;
+}
+#innerbox .navigation {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: #f02;
 }
 #innerbox .navigation .gnb {
   display: block;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background: #555;
 }
 #innerbox .navigation .gnb li {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
   justify-content: space-between;
   text-align: center;
+}
+#innerbox .navigation .gnb li .sub {
+  width: 70%;
+  height: 600px;
+  background: #fff;
 }
