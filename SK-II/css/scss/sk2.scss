@@ -44,15 +44,15 @@ body{
             height: 50px;
             position: absolute;
             line-height: 50px;
-            font-size: 1.25rem;
-            top: 25px;
-            left: 30%;
+            font-size: 1.15rem;
+            top: 20px;
+            left: 32%;
             >li{
                 justify-content: space-between;
                 text-align: center;
                 margin-left: 30px;
                 >a{
-                    font-weight: bold;
+                    font-weight: 500;
                     color: #fff;
                     >span{
                         display: block;
@@ -116,22 +116,64 @@ body{
 
 #main_slide{
     width: 100%;
-    height: 674px;
+    height: auto;
+    position: relative;
+    >button{
+        width: 80px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.6);
+        position: absolute;
+        cursor: pointer;
+        z-index: 8888;
+        &:nth-of-type(1){
+            left: 0;
+            top: 40%;
+        }
+        &:nth-of-type(2){
+            right: 0;
+            top: 40%;
+            transform: rotateY(180deg);
+        }
+        >img{
+            margin:25px;
+            left: 20px;
+        }
+    }
     >ul{
+        display: flex;
+        overflow: hidden;
+        >li{
+            >img{
+                width: 100vw;
+            }
+            
+        }
         .slide1{
             .inner-wrapper1{
-
+                >p{
+                    width: 560px;
+                    height: 35px;
+                    position: absolute;
+                    top: 40%;
+                    color: #fff;
+                    left: 15%;
+                    font-size: 30px;
+                    &:nth-of-type(2){
+                        top: 55%;
+                    }
+                    &:nth-of-type(3){
+                        top: 410px;
+                        font-size: 0.9rem;
+                        top: 80%;
+                    }
+                }
         }
         }
         .slide2{
-            .inner-wrapper2{
 
-            }
         }
         .slide3{
-            .inner-wrapper3{
 
-            }
         }
     }
     
