@@ -1,217 +1,270 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
     <title>SK-II</title>
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/sk2.css">
-    <link rel="icon" href="attr/logo/logo-red.png">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/sk2.css" />
+    <link rel="icon" href="attr/logo/logo-red.png" />
+  </head>
+  <body>
     <header>
-        <div id="header"></div>
-        <div id="innerbox">
-            <nav class="navigation">
-                <h1><img src="attr/logo/logo-white.png" alt="logo"></h1>
-                <ul class="gnb">
-                    <li>
-                        <a href="#">PITERA™ TV<span></span></a>
-                    </li>
-                    <li>
-                        <a href="#">SK-II 제품<span></span></a>
-                    </li>
-                    <li>
-                        <a href="#">베스트 셀러<span></span></a>
-                    </li>
-                    <li>
-                        <a href="#">지역(언어) 선택 · · ·<span></span></a>
-                        <ul class="sub">
-                            <li><a href="#">현재 위치 언어 ( 위치설정)<span><img src="attr/icon/pin-red.png" alt="pin"></span></a></li>
-                            <li><a href="#">영어</a></li>
-                            <li><a href="#">중국어</a></li>
-                            <li><a href="#">일본어</a></li>
-                            <li><a href="#">태국어</a></li>
-                            <li><a href="#">인도네시아어</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+      <div id="header"></div>
+      <div id="innerbox">
+        <nav class="navigation">
+          <h1><img src="attr/logo/logo-white.png" alt="logo" /></h1>
+          <ul class="gnb">
+            <li>
+              <a href="#">PITERA™ TV<span></span></a>
+            </li>
+            <li>
+              <a href="#">SK-II 제품<span></span></a>
+            </li>
+            <li>
+              <a href="#">베스트 셀러<span></span></a>
+            </li>
+            <li>
+              <a href="#">지역(언어) 선택 · · ·<span></span></a>
+              <ul class="sub">
+                <li>
+                  <a href="#"
+                    >현재 위치 언어 ( 위치설정)<span
+                      ><img src="attr/icon/pin-red.png" alt="pin" /></span
+                  ></a>
+                </li>
+                <li><a href="#">영어</a></li>
+                <li><a href="#">중국어</a></li>
+                <li><a href="#">일본어</a></li>
+                <li><a href="#">태국어</a></li>
+                <li><a href="#">인도네시아어</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="navbar">
+        <div class="control-bar">
+          <ul class="wrapper">
+            <li>
+              <a href="#">위치설정<img src="attr/icon/pin-red.png" alt="" /></a>
+            </li>
+            <li><a href="#">쇼핑하러가기</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">1:1 문의</a></li>
+            <li>
+              <a href="#">최근본글</a>
+              <ul class="latest">
+                <li>
+                  <a href="#"><img src="attr/best/FTMd.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="attr/best/SPCreamd.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="attr/best/speye-d.png" alt="" /></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="to-top">
+            <img src="attr/icon/toTopBtn.png" alt="to-top" />
+          </div>
         </div>
-        
-        <div id="navbar">
-            <div class="control-bar">
-                <ul class="wrapper">
-                    <li><a href="#">위치설정<img src="attr/icon/pin-red.png" alt=""></a></li>
-                    <li><a href="#">쇼핑하러가기</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">1:1 문의</a></li>
-                    <li>
-                        <a href="#">최근본글</a>
-                        <ul class="latest">
-                            <li><a href="#"><img src="attr/best/FTMd.png" alt=""></a></li>
-                            <li><a href="#"><img src="attr/best/SPCreamd.png" alt=""></a></li>
-                            <li><a href="#"><img src="attr/best/speye-d.png" alt=""></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="to-top"><img src="attr/icon/toTopBtn.png" alt="to-top"></div>
-            </div>
-        </div>
+      </div>
     </header>
     <section>
-        <div id="main_slide">
-            <button><img src="attr/icon/slideBtn.png"></button>
-            <button><img src="attr/icon/slideBtn.png"></button>
-            <ul>
-                <li class="slide1">
-                    <img src="attr/main_slide/Slide1.png" alt="">
-                    <div class="inner-wrapper1">
-                        <p>당신의 피부를 맑고 화사하게<br>
-                            밝혀주는 <strong>브라이트닝 에센스</strong>를 만나보세요</p>
-                        <p>모두가 인정하는 넘버 원 브라이트닝 에센스</p>
-                        <p>*2021년 10월 기점의 관련 시장 판매액 및 판매량 기준</p>
-                    </div>
-                </li>
-                <li class="slide2">
-                    <img src="attr/main_slide/Slide2.png" alt="">
-                </li>
-                <li class="slide3">
-                    <img src="attr/main_slide/Slide3.png" alt="">
-                </li>
-            </ul>
-        </div>
+      <div id="main_slide">
+        <button><img src="attr/icon/slideBtn.png" /></button>
+        <button><img src="attr/icon/slideBtn.png" /></button>
+        <ul>
+          <li class="slide1">
+            <img src="attr/main_slide/Slide1.png" alt="" />
+            <div class="inner-wrapper1">
+              <p>
+                당신의 피부를 맑고 화사하게<br />
+                밝혀주는 <strong>브라이트닝 에센스</strong>를 만나보세요
+              </p>
+              <p>모두가 인정하는 넘버 원 브라이트닝 에센스</p>
+              <p>*2021년 10월 기점의 관련 시장 판매액 및 판매량 기준</p>
+            </div>
+          </li>
+          <li class="slide2">
+            <img src="attr/main_slide/Slide2.png" alt="" />
+          </li>
+          <li class="slide3">
+            <img src="attr/main_slide/Slide3.png" alt="" />
+          </li>
+        </ul>
+      </div>
     </section>
     <section>
-        <div class="inner_banner">
-            <div class="main_banner">
-                <img src="attr/banner/Bg.png" alt="">
-                <p>제놉틱스와 피테라™의 힘을<br> 마음껏 이용하세요!</p>
-                <div class="info">
-                    <div class="info_wrapper">
-                        <div class="info_img">
-                            <img src="attr/banner/card1.png" alt="">
-                            <img src="attr/banner/card2.png" alt="">
-                            <img src="attr/banner/card3.png" alt="">
-                        </div>
-                        <div class="info_title">
-                            <p>D-멜라노 P3C®</p>
-                            <p>피테라™</p>
-                            <p>살구속 추출물</p>
-                        </div>
-                        <div class="info_txt">
-                            <p>눈에 띄는 칙칙함과 잡티를 개선해주는 강력한 브라이트닝 활성 성분입니다.</p>
-                            <p>50종 이상의 미량 영양소가 농축되어 맑고투영한 피부로 바꿔줍니다.</p>
-                            <p>눈에 띄는 칙칙함을 개선해주고 피부 톤을 밝게 가꿔줍니다.</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="inner_banner">
+        <div class="main_banner">
+          <img src="attr/banner/Bg.png" alt="" />
+          <p>
+            제놉틱스와 피테라™의 힘을<br />
+            마음껏 이용하세요!
+          </p>
+          <div class="info">
+            <div class="info_wrapper">
+              <div class="info_img">
+                <img src="attr/banner/card1.png" alt="" />
+                <img src="attr/banner/card2.png" alt="" />
+                <img src="attr/banner/card3.png" alt="" />
+              </div>
+              <div class="info_title">
+                <p>D-멜라노 P3C®</p>
+                <p>피테라™</p>
+                <p>살구속 추출물</p>
+              </div>
+              <div class="info_txt">
+                <p>
+                  눈에 띄는 칙칙함과 잡티를 개선해주는 강력한 브라이트닝 활성
+                  성분입니다.
+                </p>
+                <p>
+                  50종 이상의 미량 영양소가 농축되어 맑고투영한 피부로
+                  바꿔줍니다.
+                </p>
+                <p>눈에 띄는 칙칙함을 개선해주고 피부 톤을 밝게 가꿔줍니다.</p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section>
-        <div id="howto">
-            <div class="how_img">
-                <img src="attr/banner/howto-desk1.jpg" alt="">
-                <img src="attr/banner/howto-desk2.jpg" alt="">
-                <img src="attr/banner/howto-desk3.jpg" alt="">
-            </div>
+    <section id="how">
+      <div id="howto">
+        <div class="how_img">
+          <img src="attr/banner/howto-desk1.jpg" alt="" />
+          <img src="attr/banner/howto-desk2.jpg" alt="" />
+          <img src="attr/banner/howto-desk3.jpg" alt="" />
         </div>
-        <div id="how_txt">
-            <h4>사용방법</h4>
-            <p>1. 오토필 스포이드로 세럼을 손바닥에 덜어내세. 스포이드에 가득 채워 1회 펌핑하면 적정 용량입니다.</p>
-            <p>2. 손가락을 이용해 신경쓰이는 부위에 세럼을 묻힌다음 얼굴 전체에 바르세요.</p>
-            <p>3. 피부에 골고루 바르고 확실히 흡수되도록 가볍게 누르세요.</p>
-            <h4>사용순서</h4>
-            <p>최상의 결과를 위해 하루 2회( 아침, 저녁 )</p>
-            <p>올바른 순서대로( 에센스 - 세럼 - 모이스처라이저 ) 사용하는 것이 좋습니다.</p>
+      </div>
+      <div id="how_txt">
+        <h4>사용방법</h4>
+        <p>
+          1. 오토필 스포이드로 세럼을 손바닥에 덜어내세. 스포이드에 가득 채워
+          1회 펌핑하면 적정 용량입니다.
+        </p>
+        <p>
+          2. 손가락을 이용해 신경쓰이는 부위에 세럼을 묻힌다음 얼굴 전체에
+          바르세요.
+        </p>
+        <p>3. 피부에 골고루 바르고 확실히 흡수되도록 가볍게 누르세요.</p>
+        <h4>사용순서</h4>
+        <p>최상의 결과를 위해 하루 2회( 아침, 저녁 )</p>
+        <p>
+          올바른 순서대로( 에센스 - 세럼 - 모이스처라이저 ) 사용하는 것이
+          좋습니다.
+        </p>
+      </div>
+      <div id="how_no">
+        <!-- <div class="number"> -->
+        <div class="no_wrapper">
+          <img src="attr/banner/essence_d.png" />
+          <p>에센스</p>
         </div>
-        <div id="how_no">
-            <div class="number">
-                <div class="no_wrapper">
-                    <img src="attr/banner/essence_d.png">
-                    <p>에센스</p>
-                </div>
-                <div class="no_wrapper">
-                    <img src="attr/banner/serum_d.png">
-                    <p>세럼</p>
-                </div>
-                <div class="no_wrapper">
-                    <img src="attr/banner/cream_d.png">
-                    <p>모이스쳐라이저</p>
-                </div>
-            </div>
+        <div class="no_wrapper">
+          <img src="attr/banner/serum_d.png" />
+          <p>세럼</p>
         </div>
+        <div class="no_wrapper">
+          <img src="attr/banner/cream_d.png" />
+          <p>모이스쳐라이저</p>
+        </div>
+        <!-- </div> -->
+      </div>
     </section>
     <section>
-        <h3>베스트셀러 구매하기</h3>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_1.png">
-            </div>
-            <p class="best_name"><span>NEW</span>스킨파워 에센스</p>
-            <p class="best_txt">한 번 눌러 나오는 단 한방울로  놀라운 효과 선사합니다.</p>
-            <button class="best_btn">더 알아보기</button>
+      <h3>베스트셀러 구매하기</h3>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_1.png" />
         </div>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_2.png">
-            </div>
-            <p class="best_name"><span>NEW</span>피테라™ 에센스</p>
-            <p class="best_txt">피테라™ 에센스로 맑고 투명한 피부를 가꿔보세요.</p>
-            <button class="best_btn">더 알아보기</button>
+        <p class="best_name"><span>NEW</span>스킨파워 에센스</p>
+        <p class="best_txt">
+          한 번 눌러 나오는 단 한방울로 놀라운 효과 선사합니다.
+        </p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_2.png" />
         </div>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_3.png">
-            </div>
-            <p class="best_name">페이셜 트리트먼트마스크</p>
-            <p class="best_txt">맑고 투명한 피부를 위한 SK-II 베스트셀러 페이셜 마스크입니다.</p>
-            <button class="best_btn">더 알아보기</button>
+        <p class="best_name"><span>NEW</span>피테라™ 에센스</p>
+        <p class="best_txt">피테라™ 에센스로 맑고 투명한 피부를 가꿔보세요.</p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_3.png" />
         </div>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_4.png">
-            </div>
-            <p class="best_name"><span>BEST제</span>놉틱스 오라 에센스</p>
-            <p class="best_txt">피부의 칙칙함을 줄이고 피부톤을 밝혀주어 극광의 화사함을 끌어내주 베스트셀러 에센스입니다.</p>
-            <button class="best_btn">더 알아보기</button>
+        <p class="best_name">페이셜 트리트먼트마스크</p>
+        <p class="best_txt">
+          맑고 투명한 피부를 위한 SK-II 베스트셀러 페이셜 마스크입니다.
+        </p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_4.png" />
         </div>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_5.png">
-            </div>
-            <p class="best_name">스킨파워 에어리크림</p>
-            <p class="best_txt">공기처럼 가벼운 모이스처라이저로 피부 속 깊은 곳부터 힘을 불어넣어 줍니다.</p>
-            <button class="best_btn">더 알아보기</button>
+        <p class="best_name"><span>BEST제</span>놉틱스 오라 에센스</p>
+        <p class="best_txt">
+          피부의 칙칙함을 줄이고 피부톤을 밝혀주어 극광의 화사함을 끌어내주
+          베스트셀러 에센스입니다.
+        </p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_5.png" />
         </div>
-        <div class="best_wrapper">
-            <div class="best_img">
-                <img src="attr/best/best_6.png">
-            </div>
-            <p class="best_name">스킨파워 크림/p>
-            <p class="best_txt">강력하고 풍부하게, 피부 속 깊은 곳부터 힘을 불어넣어 줍니다.</p>
-            <button class="best_btn">더 알아보기</button>
+        <p class="best_name">스킨파워 에어리크림</p>
+        <p class="best_txt">
+          공기처럼 가벼운 모이스처라이저로 피부 속 깊은 곳부터 힘을 불어넣어
+          줍니다.
+        </p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
+      <div class="best_wrapper">
+        <div class="best_img">
+          <img src="attr/best/best_6.png" />
         </div>
+        <p class="best_name">스킨파워 크림/p></p>
+        <p class="best_txt">
+          강력하고 풍부하게, 피부 속 깊은 곳부터 힘을 불어넣어 줍니다.
+        </p>
+        <button class="best_btn">더 알아보기</button>
+      </div>
     </section>
     <footer>
-        <div id="sns">
-            <img src="attr/icon/sns1.png">
-            <img src="attr/icon/sns2.png">
-            <img src="attr/icon/sns3.png">
-            <img src="attr/icon/sns4.png">
-        </div>
-        <div class="footer_txt">
-            <img src="attr/logo/logo-white.png">
-            <p>© 2023 Procter & Gamble. All Rights Reserved. JVA2020-02-001</p>
-            <p><a href="#">고객센터</a></p>
-            <p><a href="#">개인정보처리방침</a></p>
-            <p><a href="#">이용약관</a></p>
-        </div>
+      <div id="sns">
+        <img src="attr/icon/sns1.png" />
+        <img src="attr/icon/sns2.png" />
+        <img src="attr/icon/sns3.png" />
+        <img src="attr/icon/sns4.png" />
+      </div>
+      <div class="footer_txt">
+        <img src="attr/logo/logo-white.png" />
+        <p>© 2023 Procter & Gamble. All Rights Reserved. JVA2020-02-001</p>
+        <p><a href="#">고객센터</a></p>
+        <p><a href="#">개인정보처리방침</a></p>
+        <p><a href="#">이용약관</a></p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

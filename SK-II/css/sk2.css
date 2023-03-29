@@ -3,6 +3,7 @@
 body {
   background: #ededed;
   font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
 }
 
 #header {
@@ -105,6 +106,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 230px;
 }
 #main_slide > button {
   width: 80px;
@@ -150,4 +152,143 @@ body {
   top: 410px;
   font-size: 0.9rem;
   top: 80%;
+}
+.inner_banner .main_banner > img {
+  width: 965px;
+  height: 1485px;
+  margin: 0 auto;
+}
+.inner_banner .main_banner > p {
+  font-weight: bold;
+  font-size: 48px;
+  position: absolute;
+  top: 1650px;
+  left: 35%;
+}
+.inner_banner .main_banner .info {
+  position: relative;
+  margin-bottom: 254px;
+  left: 12.5%;
+}
+.inner_banner .main_banner .info .info_wrapper {
+  width: 862px;
+  height: 458px;
+  position: absolute;
+  top: -500px;
+  left: 15%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #F597A5;
+  border-radius: 30px;
+}
+.inner_banner .main_banner .info .info_wrapper .info_img {
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: -100px;
+  left: 90px;
+}
+.inner_banner .main_banner .info .info_wrapper .info_img > img {
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+}
+.inner_banner .main_banner .info .info_wrapper .info_title {
+  width: 700px;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  left: 75px;
+}
+.inner_banner .main_banner .info .info_wrapper .info_txt {
+  width: 700px;
+  height: auto;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: absolute;
+  top: 250px;
+  left: 80px;
+}
+.inner_banner .main_banner .info .info_wrapper .info_txt > p {
+  width: 156px;
+  height: auto;
+}
+
+#how {
+  width: 100%;
+  height: 1260px;
+  background: #FEF5F3;
+  position: relative;
+}
+#how #howto .how_img {
+  width: 1281px;
+  height: 326px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: -150px;
+  left: 15%;
+}
+#how #howto .how_img img {
+  width: 407px;
+  height: 326px;
+}
+#how #how_txt {
+  width: 1174px;
+  height: 476px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #EA0429;
+  border-radius: 30px;
+  top: 300px;
+  left: 13%;
+  padding: 90px 90px 80px 90px;
+}
+#how #how_txt > h4 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+#how #how_txt > p {
+  font-size: 24px;
+  line-height: 40px;
+  margin: 0 0 30px 80px;
+}
+#how #how_txt > p:nth-of-type(3) {
+  margin-bottom: 80px;
+}
+#how #how_txt > p:nth-of-type(4) {
+  margin-bottom: 0px;
+}
+#how #how_no {
+  width: 770px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -110px;
+  left: 35%;
+  align-items: flex-end;
+}
+#how #how_no .no_wrapper {
+  width: 130px;
+  height: auto;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: 354px;
+  background: linear-gradient(180deg, #AB1A31 0%, #4C3B3E 100%);
 }
