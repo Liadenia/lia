@@ -292,3 +292,38 @@ footer {
   height: 354px;
   background: linear-gradient(180deg, #AB1A31 0%, #4C3B3E 100%);
 }
+footer #sns {
+  width: 194px;
+  padding: 85px 0 80px 404px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer #sns > a:hover {
+  filter: invert(65%) sepia(19%) saturate(6396%) hue-rotate(309deg) brightness(96%) contrast(97%);
+}
+footer .footer_txt {
+  width: 607px;
+  height: 66px;
+  display: block;
+  margin-left: 403px;
+}
+footer .footer_txt > img {
+  width: 99px;
+  height: 42px;
+  float: left;
+}
+footer .footer_txt > p {
+  float: left;
+  margin-left: 30px;
+  color: #fff;
+}
+footer .footer_txt > p > a {
+  color: #fff;
+}
+footer .footer_txt > p:nth-of-type(1) {
+  font-weight: 300;
+}
+footer .footer_txt > p:nth-of-type(3) {
+  font-weight: bold;
+}
