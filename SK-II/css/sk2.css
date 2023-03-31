@@ -1,7 +1,7 @@
 @import "default.css";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
-  background: #ededed;
+  background: #fff;
   font-family: "Noto Sans KR", sans-serif;
   overflow-x: hidden;
 }
@@ -153,34 +153,37 @@ body {
   font-size: 0.9rem;
   top: 80%;
 }
-.inner_banner .main_banner > img {
+#banner {
+  margin-bottom: 480px;
+}
+#banner .main_banner {
+  position: relative;
+}
+#banner .main_banner > img {
   width: 965px;
-  height: 1485px;
+  height: auto;
   margin: 0 auto;
 }
-.inner_banner .main_banner > p {
+#banner .main_banner > p {
   font-weight: bold;
   font-size: 48px;
   position: absolute;
-  top: 1650px;
-  left: 35%;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.inner_banner .main_banner .info {
-  position: relative;
-  margin-bottom: 254px;
-  left: 12.5%;
-}
-.inner_banner .main_banner .info .info_wrapper {
+#banner .main_banner .info_wrapper {
   width: 862px;
   height: 458px;
   position: absolute;
-  top: -500px;
-  left: 15%;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid #F597A5;
   border-radius: 30px;
 }
-.inner_banner .main_banner .info .info_wrapper .info_img {
+#banner .main_banner .info_wrapper .info_img {
   width: 700px;
   display: flex;
   flex-direction: row;
@@ -190,10 +193,10 @@ body {
   top: -100px;
   left: 90px;
 }
-.inner_banner .main_banner .info .info_wrapper .info_img > img {
+#banner .main_banner .info_wrapper .info_img > img {
   filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
 }
-.inner_banner .main_banner .info .info_wrapper .info_title {
+#banner .main_banner .info_wrapper .info_title {
   width: 700px;
   font-size: 32px;
   font-weight: bold;
@@ -205,7 +208,7 @@ body {
   top: 150px;
   left: 75px;
 }
-.inner_banner .main_banner .info .info_wrapper .info_txt {
+#banner .main_banner .info_wrapper .info_txt {
   width: 700px;
   height: auto;
   line-height: 30px;
@@ -219,7 +222,7 @@ body {
   top: 250px;
   left: 80px;
 }
-.inner_banner .main_banner .info .info_wrapper .info_txt > p {
+#banner .main_banner .info_wrapper .info_txt > p {
   width: 156px;
   height: auto;
 }
@@ -229,6 +232,7 @@ body {
   height: 1260px;
   background: #FEF5F3;
   position: relative;
+  margin-bottom: 380px;
 }
 #how #howto .how_img {
   width: 1281px;
@@ -238,7 +242,8 @@ body {
   justify-content: space-between;
   position: absolute;
   top: -150px;
-  left: 15%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #how #howto .how_img img {
   width: 407px;
@@ -252,7 +257,8 @@ body {
   border: 1px solid #EA0429;
   border-radius: 30px;
   top: 300px;
-  left: 13%;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 90px 90px 80px 90px;
 }
 #how #how_txt > h4 {
@@ -285,6 +291,63 @@ body {
   width: 130px;
   height: auto;
   text-align: center;
+}
+
+#best {
+  width: 100%;
+  padding-bottom: 300px;
+}
+#best .best_wrapper {
+  width: 1290px;
+  height: 930px;
+  margin: 0px auto;
+}
+#best .best_wrapper > h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+#best .best_wrapper .inner_wrapper {
+  width: 400px;
+  height: 447px;
+  display: inline-grid;
+  justify-items: start;
+  margin: 0 0 40px 40px;
+}
+#best .best_wrapper .inner_wrapper:nth-of-type(1) {
+  margin-left: 0;
+}
+#best .best_wrapper .inner_wrapper:nth-of-type(4) {
+  margin-left: 0;
+}
+#best .best_wrapper .inner_wrapper .best_img {
+  width: 400px;
+  height: 300px;
+  background: #fff;
+}
+#best .best_wrapper .inner_wrapper .best_img > img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid #F79BA9;
+}
+#best .best_wrapper .inner_wrapper .content_wrap {
+  height: 130px;
+  position: relative;
+  margin: 20px 40px;
+}
+#best .best_wrapper .inner_wrapper .content_wrap .best_btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 40px;
+  background: #F597A5;
+  border-radius: 5px;
+  color: #fff;
+}
+#best .best_wrapper .inner_wrapper .content_wrap .best_btn:hover {
+  background: #EA0429;
 }
 
 footer {
