@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "default.css";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
@@ -13,6 +14,11 @@ body {
   background: #D90327;
   position: relative;
   z-index: 1;
+}
+
+header#innerbox.scroll {
+  background-color: #000;
+  /* 변경할 스타일 추가 */
 }
 
 #innerbox {
@@ -336,7 +342,21 @@ body {
   position: relative;
   margin: 20px 40px;
 }
+#best .best_wrapper .inner_wrapper .content_wrap .best_name {
+  font-weight: bold;
+  font-size: 24px;
+}
+#best .best_wrapper .inner_wrapper .content_wrap .best_name > span {
+  color: #D90327;
+  font-size: 20px;
+}
+#best .best_wrapper .inner_wrapper .content_wrap .best_txt {
+  font-size: 16px;
+  padding: 5px;
+}
 #best .best_wrapper .inner_wrapper .content_wrap .best_btn {
+  font-weight: 16px;
+  cursor: pointer;
   position: absolute;
   right: 0;
   bottom: 0;
