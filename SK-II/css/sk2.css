@@ -41,6 +41,7 @@ header#innerbox.scroll {
   height: 100px;
   position: fixed;
   display: flex;
+  z-index: 99999;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -106,15 +107,15 @@ header#innerbox.scroll {
 }
 
 #navbar {
-  width: 260px;
-  height: 650px;
+  width: 200px;
+  height: 600px;
   border-radius: 20px;
   background: #fffbfc;
   border: 1px solid #EA0429;
   position: absolute;
-  right: 3%;
-  top: 80%;
-  z-index: 99999;
+  right: 1%;
+  top: 90%;
+  z-index: 99998;
 }
 #navbar .control-bar {
   width: 188px;
@@ -123,7 +124,7 @@ header#innerbox.scroll {
 }
 #navbar .control-bar .wrapper {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   margin: 20px;
 }
 #navbar .control-bar .wrapper a {
@@ -157,16 +158,16 @@ header#innerbox.scroll {
   border: 1px solid #F798A8;
 }
 #navbar .control-bar .latest {
-  width: 188px;
+  width: 170px;
   height: 153px;
   border-radius: 10px;
   border: 1px solid #EA0429;
   overflow: hidden;
   text-align: center;
-  margin: 20px 0 10px -20px;
+  margin: 30px 0 10px -10px;
 }
 #navbar .control-bar .latest img {
-  width: 188px;
+  width: 170px;
   height: 153px;
   border-radius: 10px;
 }
