@@ -139,11 +139,11 @@ header#innerbox.scroll {
   margin-bottom: 30px;
 }
 #navbar .control-bar .wrapper > li:nth-of-type(1) {
-  margin: 30px 0 50px 0;
+  margin: 30px 0 30px 0;
   font-weight: normal;
 }
 #navbar .control-bar .wrapper > li:nth-of-type(7) {
-  margin: 60px 0 50px 0;
+  margin: 10px 0 10px 0;
   font-weight: normal;
 }
 #navbar .control-bar .wrapper > li .pin {
@@ -156,6 +156,39 @@ header#innerbox.scroll {
   width: 140px;
   border: 1px solid #F798A8;
 }
+#navbar .control-bar .latest {
+  width: 188px;
+  height: 153px;
+  border-radius: 10px;
+  border: 1px solid #EA0429;
+  overflow: hidden;
+  text-align: center;
+  margin: 20px 0 10px -20px;
+}
+#navbar .control-bar .latest img {
+  width: 188px;
+  height: 153px;
+  border-radius: 10px;
+}
+#navbar .control-bar .to-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #EA0429;
+  display: block;
+  background: #F798A8;
+  margin: 10px auto;
+}
+#navbar .control-bar .to-top a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+}
+#navbar .control-bar .to-top a img {
+  margin: 10px auto;
+}
+
 #main_slide {
   width: 100%;
   height: auto;
