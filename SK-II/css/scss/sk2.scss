@@ -41,7 +41,7 @@ header#innerbox.scroll {
         height: 100px;
         position: fixed;
         display: flex;
-        z-index: 99999;
+        z-index: 99998;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
         backdrop-filter: blur(15px);
         .gnb{
@@ -54,6 +54,7 @@ header#innerbox.scroll {
             font-size: 1.15rem;
             top: 20px;
             left: 32%;
+            z-index: 99999;
             >li{
                 justify-content: space-between;
                 text-align: center;
@@ -63,18 +64,26 @@ header#innerbox.scroll {
                     color: #fff;
                     >span{
                         display: block;
-                        width: 100%;
+                        width: 0px;
                         height: 5px;
                         background: #fff;
                         margin-top: -10px;
+                        transition: all 0.3s;
+                        // display: none;
                     }
+                    &:hover{
+                        // color: #F798A8;
+                    }
+                }
+                &:hover>a>span{
+                    width: 100%;
                 }
                 .sub{
                     width: 60%;
                     height: 500px;
                     background: #fff;
                     position: absolute;
-                    top: 75px;
+                    top: 80px;
                     left: -160px;
                     box-sizing: border-box;
                     border-radius: 0 0 20px 20px;
@@ -92,9 +101,9 @@ header#innerbox.scroll {
                                 top: 48px;
                                 left: 330px;
                             }
-                        }
-                        a:hover{
+                            &:hover{
                             color: #f02;
+                            }
                         }
                     }
                     >li:first-child{
@@ -114,7 +123,7 @@ header#innerbox.scroll {
     position: absolute;
     right: 1%;
     top: 90%;
-    z-index: 99998;
+    z-index: 99997;
     .control-bar{
         width: 188px;
         height: 596px;

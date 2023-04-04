@@ -41,7 +41,7 @@ header#innerbox.scroll {
   height: 100px;
   position: fixed;
   display: flex;
-  z-index: 99999;
+  z-index: 99998;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
@@ -56,6 +56,7 @@ header#innerbox.scroll {
   font-size: 1.15rem;
   top: 20px;
   left: 32%;
+  z-index: 99999;
 }
 #innerbox .navigation .gnb > li {
   justify-content: space-between;
@@ -68,17 +69,21 @@ header#innerbox.scroll {
 }
 #innerbox .navigation .gnb > li > a > span {
   display: block;
-  width: 100%;
+  width: 0px;
   height: 5px;
   background: #fff;
   margin-top: -10px;
+  transition: all 0.3s;
+}
+#innerbox .navigation .gnb > li:hover > a > span {
+  width: 100%;
 }
 #innerbox .navigation .gnb > li .sub {
   width: 60%;
   height: 500px;
   background: #fff;
   position: absolute;
-  top: 75px;
+  top: 80px;
   left: -160px;
   box-sizing: border-box;
   border-radius: 0 0 20px 20px;
@@ -99,7 +104,7 @@ header#innerbox.scroll {
   top: 48px;
   left: 330px;
 }
-#innerbox .navigation .gnb > li .sub > li a:hover {
+#innerbox .navigation .gnb > li .sub > li > a:hover {
   color: #f02;
 }
 #innerbox .navigation .gnb > li .sub > li:first-child {
@@ -115,7 +120,7 @@ header#innerbox.scroll {
   position: absolute;
   right: 1%;
   top: 90%;
-  z-index: 99998;
+  z-index: 99997;
 }
 #navbar .control-bar {
   width: 188px;
