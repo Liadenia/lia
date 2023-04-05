@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "default.css";
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 body {
@@ -14,11 +13,6 @@ body {
   background: #D90327;
   position: relative;
   z-index: 1;
-}
-
-header#innerbox.scroll {
-  background-color: #000;
-  /* 변경할 스타일 추가 */
 }
 
 #innerbox {
@@ -58,6 +52,15 @@ header#innerbox.scroll {
   left: 32%;
   z-index: 99999;
 }
+#innerbox .navigation .gnb.scrolled a {
+  color: #F798A8;
+}
+#innerbox .navigation .gnb.scrolled a:hover {
+  color: #222;
+}
+#innerbox .navigation .gnb.scrolled a > span {
+  background: #F798A8;
+}
 #innerbox .navigation .gnb > li {
   justify-content: space-between;
   text-align: center;
@@ -74,6 +77,9 @@ header#innerbox.scroll {
   background: #fff;
   margin-top: -10px;
   transition: all 0.3s;
+}
+#innerbox .navigation .gnb > li > a:hover {
+  color: #222;
 }
 #innerbox .navigation .gnb > li:hover > a > span {
   width: 100%;
@@ -99,10 +105,11 @@ header#innerbox.scroll {
 #innerbox .navigation .gnb > li .sub > li > a {
   color: #222;
 }
-#innerbox .navigation .gnb > li .sub > li > a > span {
+#innerbox .navigation .gnb > li .sub > li > a .pin {
   position: absolute;
   top: 48px;
   left: 330px;
+  background: #fff;
 }
 #innerbox .navigation .gnb > li .sub > li > a:hover {
   color: #f02;

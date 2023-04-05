@@ -17,10 +17,6 @@ body{
     position: relative;
     z-index: 1;
 }
-header#innerbox.scroll {
-    background-color: #000;
-    /* 변경할 스타일 추가 */
-}
 
 #innerbox{
     width: 100%;
@@ -55,6 +51,17 @@ header#innerbox.scroll {
             top: 20px;
             left: 32%;
             z-index: 99999;
+            &.scrolled {
+                a{
+                    color: #F798A8;
+                    &:hover{
+                        color: #222;
+                    }
+                    >span{
+                        background: #F798A8;
+                    }
+                }
+            }
             >li{
                 justify-content: space-between;
                 text-align: center;
@@ -72,7 +79,7 @@ header#innerbox.scroll {
                         // display: none;
                     }
                     &:hover{
-                        // color: #F798A8;
+                        color: #222;
                     }
                 }
                 &:hover>a>span{
@@ -96,10 +103,11 @@ header#innerbox.scroll {
                         margin: 20px 0 0 10%;
                         >a{
                             color: #222;
-                            >span{
+                            .pin{
                                 position: absolute;
                                 top: 48px;
                                 left: 330px;
+                                background: #fff;
                             }
                             &:hover{
                             color: #f02;
