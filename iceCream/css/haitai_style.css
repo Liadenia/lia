@@ -272,24 +272,24 @@ body{ font-family:"맑은 고딕", sans-serif; overflow-x:hidden;}
 #recipe{
 	width:100%;
 	background-color:#f1fbff;
-	padding-top:100px;
-	padding-bottom:100px;
+	padding-top:80px;
+	padding-bottom:80px;
 }
 #recipe>h2{
-	font-size:40px;
+	font-size:30px;
 	font-weight:bold;
-	margin-bottom:100px;
+	margin-bottom:80px;
 	text-align:center;
 }
 #recipe>h2>.red{
 	color:#ed2885;
-	font-size:45px;
+	font-size:40px;
 	font-weight:bold;
 }
 #recipe>.recipe_info{
-	width:1780px;
-	height:454px;
-	margin:0px auto 200px;
+	width:1480px;
+	height:350px;
+	margin:0px auto 100px;
 	overflow:hidden;
 }
 #recipe>.recipe_info>ul{
@@ -297,10 +297,37 @@ body{ font-family:"맑은 고딕", sans-serif; overflow-x:hidden;}
 }
 #recipe>.recipe_info>ul>li{
 	float:left;
+	margin-left: 50px;
+	position: relative;
+}
+#recipe>.recipe_info>ul>li>img{
+	width: 310px;
+	height: 310px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+}
+#recipe>.recipe_info>ul>li>div{
+	width: 310px;
+	height: 110px;
+	position: absolute;
+	background: #fff;
+	display: inline-block;
+	bottom: 0;
+	text-align: center;
+	line-height: 30px;
+	padding-top: 20px;
+	border-radius: 60px 60px 0 0;
+	box-shadow: 3px 0px 3px rgba(0, 0, 0, 0.25);
+}
+#recipe>.recipe_info>ul>li>div>a{
+	color: #ED3D91;
+	font-weight: bold;
+}
+#recipe>.recipe_info>ul>li>div>a:hover{
+	color: #00b2ff;
 }
 #recipe>.recipe_sns{
 	width:1780px;
-	height:454px;
+	height:350px;
 	margin:0px auto 80px;
 	overflow:hidden;
 }
@@ -309,6 +336,13 @@ body{ font-family:"맑은 고딕", sans-serif; overflow-x:hidden;}
 }
 #recipe>.recipe_sns>ul>li{
 	float:left;
+	margin-left: 40px;
+}
+#recipe>.recipe_sns>ul>li>img{
+	width: 310px;
+	height: 310px;
+	border-radius: 20%;
+	border: 1px solid #ED3D91;
 }
 
 /* ---------------------recipe container end-------------------- */
@@ -478,7 +512,15 @@ width:580px; height:300px;
 	float:left;
 }
 #event_info>.event_container>.content>.wrap>.news_wrapper{
-	width:704px;  height:1500px;  position:relative;
+	width:704px;
+	height:1000px;
+	position:relative;
+	overflow-y: auto;
+}
+#event_info > .event_container > .content > .wrap > .news_wrapper::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	background-color: transparent;
 }
 #event_info>.event_container>.content>.wrap>.news_wrapper>.news_box{
 	width:650px;height:290px;
@@ -486,6 +528,10 @@ width:580px; height:300px;
 	border-radius:30px;
 	margin-bottom:30px;
 }
+#event_info>.event_container>.content>.wrap>.news_wrapper>.news_box:last-child{
+	margin-bottom: 400px;
+}
+
 #event_info>.event_container>.content img{
 	width:200px; height:200px;
 	display:block;
@@ -508,8 +554,8 @@ width:580px; height:300px;
 	color:#151515;
 }
 #event_info>.event_container>.content>.wrap>.news_wrapper>.news_box>.info_txt>p{
-	font-size:20px;
-	line-height:20px;
+	font-size:18px;
+	line-height:25px;
 	letter-spacing:-1px;
 	padding-bottom:20px;
 	color:#646464;
@@ -538,7 +584,7 @@ width:580px; height:300px;
 #event_info>.event_container>.content>.control_bar{
 	width:6px; height:680px; 
 	float:right; 
-	background:#9c9c9c;
+	background:#ededed;
 	position:relative;
 	right:30px;
 }
@@ -548,7 +594,7 @@ width:580px; height:300px;
 	background:#ed2885;
 	transform:rotate(45deg);
 	position:absolute;
-	left:-15px; top:15px;
+	left:-12px; top:15px;
 }
 
 #event_info>.event_container>.right_content{
@@ -592,9 +638,9 @@ width:580px; height:300px;
 }
 #event_info>.event_container>.right_content>.information a{
 	width:auto;
-	padding:2px 15px;
+	padding:3px 15px 2px 15px;
 	font-size:16px;
-	line-height:24px;
+	line-height:25px;
 	text-align:center;
 	color:#464646;
 	border:1px solid #9c9c9c;
