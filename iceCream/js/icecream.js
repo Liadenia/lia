@@ -1,5 +1,5 @@
 
-
+// ----------------------------event page scroll js-----
 let newsWrapper = document.querySelector('.news_wrapper');
 let controlBar = document.querySelector('.control_bar');
 let ctrBtn = document.querySelector('.ctr_btn');
@@ -17,4 +17,22 @@ newsWrapper.addEventListener('scroll', function() {
   let btnTop = Math.min(maxBtnTop, scrollPercentage * maxBtnTop);
   ctrBtn.style.top = btnTop + 'px';
   ctrBtn.style.position = 'relative';
+});
+
+// ----------------------------swiper js-----
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

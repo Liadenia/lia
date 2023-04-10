@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 		<title>해태아이스크림</title>
 		<link rel="stylesheet" type="text/css" href="css/haitai_style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 	</head>
 	<body>
 		<header id="main_header">
@@ -155,34 +156,35 @@
 	  	</div>	
 	  </section>
 	  <section id="sub_slides">
-			<div class="icecream">
-			  <ul>
+			<div class="icecream swiper mySwiper">
+			  <ul class="swiper-wrapper">
 			<!--li*6>img[src="" alt="icecream$"]>div>p>a[href="#"]>-->
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice1.jpg" alt="icecream1">
 			  		<a href="#"></a>
 			  	</li>
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice2.png" alt="icecream2">
 			  		<a href="#"></a>
 			  	</li>
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice3.png" alt="icecream3">
 			  		<a href="#"></a>
 			  	</li>
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice4.jpg" alt="icecream4">
 			  		<a href="#"></a>
 			  	</li>
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice5.jpg" alt="icecream5">
 			  		<a href="#"></a>
 			  	</li>
-			  	<li>
+			  	<li class="swiper-slide">
 			  		<img src="img/ice6.jpg" alt="icecream6">
 			  		<a href="#"></a>
 			  	</li>
 			  </ul>
+			  <div class="swiper-pagination"></div>
 		    </div>
 	  </section>
 	  <section id="recipe">
@@ -486,6 +488,7 @@
 				</div>
       	</div>
       </footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/icecream.js"></script>
 </body>
 </html>
