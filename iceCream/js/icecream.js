@@ -22,13 +22,14 @@ newsWrapper.addEventListener('scroll', function() {
 // ----------------------------swiper js-----
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 5,
+  autoHeight: false,
   centeredSlides: true,
-  spaceBetween: 30,
+  spaceBetween: 20,
   grabCursor: true,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 1500,
     disableOnInteraction: false,
   },
   pagination: {

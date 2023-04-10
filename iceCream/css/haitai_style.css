@@ -260,13 +260,23 @@ body{ font-family:"맑은 고딕", sans-serif; overflow-x:hidden;}
 	width:324px; height:342px;
 	border:1px solid #ed2885;
 	border-radius:40px;
-	display:block;
-	float:left;
+	/* display:block;
+	float:left; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-left:15px;
 }
 #sub_slides>.icecream>ul>li>img{
-	width:300px; height:310px;
-	border-radius:50px;
+	width:300px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#sub_slides>.icecream>ul>.height>img{
+	/* height: 300px; */
+	width: 200px;
 }
 
 #recipe{
@@ -890,12 +900,16 @@ width:580px; height:300px;
 	}
 	#sub_slides>.icecream>ul>li{
 		width:110px; height:110px;
-		float:left;
+		/* float:left; */
 		margin:10px 0px 10px 10px;
 		border-radius:30px;
+		display: flex;
+      justify-content: center;
+      align-items: center;
 	}
 	#sub_slides>.icecream>ul>li>img{
-		width:100px; height:100px;
+		width:300px;
+		height:310px;
 		margin:5px auto;
 	}
 	#sub_slides>.icecream>ul>li:nth-child(1){
