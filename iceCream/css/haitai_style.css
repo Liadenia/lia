@@ -278,6 +278,12 @@ body{ font-family:"맑은 고딕", sans-serif; overflow-x:hidden;}
 	/* height: 300px; */
 	width: 200px;
 }
+.swiper-pagination-clickable .swiper-pagination-bullet{
+	background: #8cddff;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet-active{
+	background: #ffeaa1;
+}
 
 #recipe{
 	width:100%;
